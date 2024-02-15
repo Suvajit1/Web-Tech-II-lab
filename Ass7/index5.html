@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bill Payment</title>
+    <script>
+        function showTextBox() {
+            var payLaterRadio = document.getElementById('payLater');
+            var textBox = document.getElementById('paymentDate');
+
+            if (payLaterRadio.checked) {
+                textBox.style.display = 'block';
+            } else {
+                textBox.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Online Bill Payment</h2>
+    <form>
+        <input type="radio" id="payNow" name="paymentType" value="payNow" checked>
+        <label for="payNow">Pay Now</label><br>
+
+        <input type="radio" id="payLater" name="paymentType" value="payLater" onclick="showTextBox()">
+        <label for="payLater">Pay Later</label><br>
+
+        <div id="paymentDate" style="display: none;">
+            <label for="paymentDate">Payment Date:</label>
+            <input type="date" id="paymentDate" name="paymentDate"><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
