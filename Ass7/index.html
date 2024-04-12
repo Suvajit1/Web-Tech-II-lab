@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bill Payment</title>
+</head>
+<body bgcolor="#E1ECE8">
+    <h2>Online Bill Payment</h2>
+    <form action="./action.html" onsubmit="validateDate()">
+        <input type="radio" id="payNow" name="paymentType" value="payNow" checked>
+        <label for="payNow">Pay Now</label><br>
+
+        <input type="radio" id="payLater" name="paymentType" value="payLater" onclick="showTextBox()">
+        <label for="payLater">Pay Later</label><br>
+
+        <div id="paymentDate" style="display: none;">
+            <label for="paymentDate">Payment Date:</label>
+            <input type="date" id="paymentDate" name="paymentDate"><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

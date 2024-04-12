@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="populateStates()" bgcolor=#BBF2AC>
+
+    <h1>Solution to Assignment Number : 9</h1>
+
+    <br><br>
+    <label for="states">States:</label>
+    <select id="states" onchange="populateDistricts()">
+        <option value="">--Select a state--</option>
+    </select>
+    <br />
+    <br />
+    <label for="districts">Districts:</label>
+    <select id="districts" onchange="displayDistrictInfo()">
+        <option value="">--Select a district--</option>
+    </select>
+    <br />
+    <br />
+    <label id="district-info"></label>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eacaca;
+}
+input#chat {
+    border: 1px solid #041E42;
+    border-right-color: #041E42;
+    border-bottom-color: #041E42;
+    width: 410px
+}
+
+#console-container {
+    width: 400px;
+}
+
+#console {
+    border: 1px solid #041E42;
+    border-right-color: #041E42;
+    border-bottom-color: #041E42;
+    height: 170px;
+    overflow-y: scroll;
+    padding: 5px;
+    width: 100%;
+}
+
+#console p {
+    padding: 0;
+    margin: 0;
+}

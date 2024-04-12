@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subject List Example</title>
+    <style>
+      #subject-list {
+        display: none;
+      }
+
+      #subject-message {
+        display: none;
+      }
+    </style>
+  </head>
+  <body bgcolor=#FFFFE0>
+
+    <h1>Solution to Assignment Number : 8</h1>
+
+    <br>
+    <label for="year">Year:</label>
+    <select id="year" name="year" onchange="updateSubjectList()">
+      <option value="">Select a year</option>
+      <option value="1st">1st year</option>
+      <option value="2nd">2nd year</option>
+      <option value="3rd">3rd year</option>
+      <option value="4th">4th year</option>
+      <option value="5th">5th year</option>
+    </select>
+
+    <label for="semester">Semester:</label>
+    <select id="semester" name="semester" onchange="updateSubjectList()">
+      <option value="">Select a semester</option>
+      <option value="1st">1st semester</option>
+      <option value="2nd">2nd semester</option>
+    </select>
+
+    <p id="subject-message"> The subjects offered in this semester are : </p>
+    <ul id="subject-list"></ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
